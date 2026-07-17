@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#090e17" rx="16"/>
+  
+  <defs>
+    <!-- Card Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="secondaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="grayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Glow & Shadow Filters -->
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+
+    <!-- Marker Arrowheads -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#4b5563" />
+    </marker>
+    <marker id="arrowGlow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#8b5cf6" />
+    </marker>
+  </defs>
+
+  <!-- Title & Metadata -->
+  <text x="40" y="50" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">PORTFOLIO SITEMAP ARCHITECTURE</text>
+  <text x="40" y="75" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#6b7280" letter-spacing="0.05em">STUDENT: GHULAM MUSTAFA KHIZAR  |  TRACK: GENERAL AI FLUENCY</text>
+
+  <!-- Legend -->
+  <g transform="translate(560, 35)">
+    <circle cx="10" cy="15" r="6" fill="#8b5cf6" filter="url(#glow)"/>
+    <text x="22" y="19" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">One Action Path (Goal)</text>
+    
+    <circle cx="180" cy="15" r="6" fill="#4b5563"/>
+    <text x="192" y="19" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#94a3b8">Standard Link</text>
+  </g>
+
+  <!-- Connecting Lines (Standard) -->
+  <path d="M 390 190 L 190 280" fill="none" stroke="#334155" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M 390 190 L 610 280" fill="none" stroke="#334155" stroke-dasharray="3 3" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M 190 380 L 370 410" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)" />
+  <path d="M 610 380 L 430 410" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Connecting Lines (One Action Path - Glowing) -->
+  <path d="M 400 240 L 400 375" fill="none" stroke="#8b5cf6" stroke-width="2.5" marker-end="url(#arrowGlow)" filter="url(#glow)"/>
+
+  <!-- PAGE CARD 1: LANDING PAGE (HOME) -->
+  <g transform="translate(250, 110)" filter="url(#shadow)">
+    <rect width="300" height="130" rx="12" fill="url(#primaryGrad)" />
+    <!-- Glowing outline -->
+    <rect width="300" height="130" rx="12" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.5"/>
+    
+    <text x="20" y="32" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#93c5fd" letter-spacing="0.05em">HOME / LANDING PAGE</text>
+    <text x="20" y="55" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="#ffffff">The Gateway</text>
+    
+    <!-- Info details -->
+    <rect x="20" y="70" width="260" height="42" rx="6" fill="#1d4ed8" opacity="0.5"/>
+    <text x="30" y="86" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#bfdbfe">CLAIM: Premium AI-assisted Frontend Engineer</text>
+    <text x="30" y="100" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#f472b6">CTA: View Case Studies (Go to Work)</text>
+  </g>
+
+  <!-- PAGE CARD 2: WORK / CASE STUDIES -->
+  <g transform="translate(250, 390)" filter="url(#shadow)">
+    <rect width="300" height="120" rx="12" fill="url(#secondaryGrad)" />
+    <rect width="300" height="120" rx="12" fill="none" stroke="#c084fc" stroke-width="1.5" opacity="0.5"/>
+    
+    <text x="20" y="30" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#e9d5ff" letter-spacing="0.05em">WORK / CASE STUDIES</text>
+    <text x="20" y="52" font-family="'Inter', sans-serif" font-size="15" font-weight="800" fill="#ffffff">The Proof Statement</text>
+    
+    <rect x="20" y="65" width="260" height="38" rx="6" fill="#6d28d9" opacity="0.5"/>
+    <text x="30" y="80" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#f3e8ff">SHOWCASING: 3 High-Fidelity Web Projects</text>
+    <text x="30" y="93" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#34d399">GOAL: Direct user to Book a Call (Contact)</text>
+  </g>
+
+  <!-- PAGE CARD 3: ABOUT ME (LEFT SIDE) -->
+  <g transform="translate(40, 280)" filter="url(#shadow)">
+    <rect width="250" height="100" rx="12" fill="url(#grayGrad)" />
+    <rect width="250" height="100" rx="12" fill="none" stroke="#475569" stroke-width="1" opacity="0.5"/>
+    
+    <text x="20" y="28" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="0.05em">ABOUT ME</text>
+    <text x="20" y="48" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#ffffff">The Engineer Behind it</text>
+    
+    <text x="20" y="70" font-family="'Inter', sans-serif" font-size="10" font-weight="500" fill="#64748b">Bio, tech stack (React/Vite/CSS),</text>
+    <text x="20" y="82" font-family="'Inter', sans-serif" font-size="10" font-weight="500" fill="#64748b">and AI fluency toolkit credentials.</text>
+  </g>
+
+  <!-- PAGE CARD 4: CONTACT / SCHEDULE (RIGHT SIDE) -->
+  <g transform="translate(560, 280)" filter="url(#shadow)">
+    <rect width="250" height="100" rx="12" fill="url(#accentGrad)" />
+    <rect width="250" height="100" rx="12" fill="none" stroke="#34d399" stroke-width="1" opacity="0.3"/>
+    
+    <text x="20" y="28" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#a7f3d0" letter-spacing="0.05em">CONTACT / INQUIRY</text>
+    <text x="20" y="48" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#ffffff">The One Action</text>
+    
+    <text x="20" y="70" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#a7f3d0">Scheduler, form, and socials.</text>
+    <text x="20" y="82" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#ffffff">GOAL: Convert leads to clients/jobs.</text>
+  </g>
+</svg>
