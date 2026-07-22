@@ -1,3 +1,7 @@
+# Deployed Version
+
+The live preview URL for this project is deployed on Vercel: [https://fly-rank-capstone.vercel.app/](https://fly-rank-capstone.vercel.app/)
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

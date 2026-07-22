@@ -2,6 +2,10 @@
 
 This repository serves as the capstone project for the **Frontend AI Engineering** track on FlyRank.
 
+## Deployed Previews
+
+*   **Task 7 (Next.js Application)**: [https://fly-rank-capstone.vercel.app/](https://fly-rank-capstone.vercel.app/)
+
 ## Project Overview
 
 The objective of this track is to build high-quality, AI-assisted frontend web applications. This repository contains the source code, configurations, and documentation developed throughout the program.
