@@ -39,3 +39,14 @@ As the project scales, utilize these standard commands:
   - Use modern typography (e.g., Inter, Roboto, Outfit via Google Fonts).
   - Apply smooth transitions and micro-animations for hover and active states.
   - Implement full responsiveness with custom media queries.
+
+## Project Rules & Guidelines (Learned from Task 5)
+
+- **Forms and Accessibility**:
+  - Always link form labels to their inputs using matching `htmlFor` and `id`.
+  - Set `aria-invalid` to `true` on inputs containing validation errors, and bind input elements to their error message spans using `aria-describedby`.
+- **Domain Validation**:
+  - Any critical integrations (such as Calendly links for booking scheduler redirects) must be strictly validated against domain-specific regular expressions (e.g., `^https?:\/\/(www\.)?calendly\.com\/`) rather than allowing generic URLs.
+- **Testing with Fake Timers**:
+  - When using Vitest fake timers (`vi.useFakeTimers()`), wrap any clock advancement (`vi.advanceTimersByTime`) in React's `act()` function.
+  - Do not use asynchronous `waitFor` helper utilities in tests with active fake timers; instead, perform assertions synchronously right after advancing the timer.
